@@ -1,5 +1,23 @@
 Create a django project
+    activate virtualenv
+    django-admin startproject class_project
+    cd class_project
+
 Create django app
+    mkdir apps
+    cd apps
+    touch __init__.py
+    python ../manage.py startapp class_project_app
+    //add new app name to installed apps in main settings
+    touch urls.py   
+    //this goes into main urls.py
+        from django.conf.urls import url, include # Notice we added include
+        from django.contrib import admin
+            urlpatterns = [
+            url(r'^', include('apps.class_project_app.urls')) # And now we use the include function to pull in our <appname>.urls...
+        ]
+    
+
 Redo ninjaGold
 
 URL->View->HTML
