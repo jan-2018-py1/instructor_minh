@@ -14,6 +14,6 @@ Create django app
     cd ../apps/ninja_gold
     touch urls.py
     [in urls.py: import url, import ./views, add urlpattern for views]
-Redo ninjaGold
+
 
 URL->View->HTML
