@@ -1,9 +1,27 @@
 Create a django project
+<<<<<<< HEAD
     activate virutalenv
     django-admin startproject <project_name>
 Create django app
     cd <project_name>
 
+=======
+    source djangoenv/bin/activate
+    django-admin startproject ninja_gold
+
+Create django app
+    mkdir apps
+    cd apps
+    touch __init__.py
+    python ../manage.py startapp ninja_gold
+    cd ..
+    cd ninja_gold
+    [in settings.py: add "apps.ninja_gold" to installed apps]
+    [in urls.py: import include, add urlpattern for ninja_gold]
+    cd ../apps/ninja_gold
+    touch urls.py
+    [in urls.py: import url, import ./views, add urlpattern for views]
+>>>>>>> f0db881a3de10a36aa3a49471274e243bed0c4f0
 Redo ninjaGold
 
 URL->View->HTML
