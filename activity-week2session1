@@ -1,7 +1,8 @@
 Create a branch named <yourName+week21>
+Edit this file and write the commands to create a new project
 
 1. Write Commands to create a django project
-    1. activiate virtual env
+    1. activate virtual env
     ...
 2. Write Commands to create django app
     1. cd <project_name>
