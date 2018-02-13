@@ -1,5 +1,9 @@
 Create a django project
+    activate virutalenv
+    django-admin startproject <project_name>
 Create django app
+    cd <project_name>
+
 Redo ninjaGold
 
 URL->View->HTML
