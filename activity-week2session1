@@ -2,10 +2,23 @@ Create a branch named <yourName+week21>
 
 1. Write Commands to create a django project
     1. activate virtual env
-    2. django-admin startproject ninja_gold
+    2. django-admin startproject <project_name>
 2. Write Commands to create django app
     1. cd <project_name>
-    ...
+    mkdir apps
+    cd apps
+    touch __init__.py
+    python ../manage.py startapp <app_name>
+    cd <app_name>
+    touch urls.py
+    mkdir templates
+    mkdir templates/<app_name>
+    mkdir static
+    mkdir static/<app_name>
+    add to settings
+    add to urls.py
+    create a single default route
+    run migrations to use session # python manage.py migrate
 DONT FORGET FOLDERS AND URLS!
 ALL SUDO CODE! Don't run the commands!
 
