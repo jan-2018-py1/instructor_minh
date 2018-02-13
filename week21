@@ -1,5 +1,15 @@
 Create a django project
+-activate django virtualenv
+-switch to directory: django-admin startproject NinjaGold
+
 Create django app
+-create apps directory in project directory
+-create __init__.py in app directory
+-in apps directory, run: python ../manage.py startapp ninjagold
+-in settings.py add to installed apps 'apps.ninjagold'
+-in urls.py, add url pattern (r'^' include(apps.ninjagold))
+-add urls.py to app /ninjagold folder
+
 Redo ninjaGold
 
 URL->View->HTML
