@@ -3,3 +3,32 @@ Create django app
 Redo ninjaGold
 
 URL->View->HTML
+Create a branch named <yourName+week21>
+Edit this file and write the commands to create a new project
+
+1. Write Commands to create a django project
+    1. activate virtual env
+    2. django-admin startproject [project_name]
+
+    ...
+2. Write Commands to create django app
+    1. cd <project_name>
+    2. mkdir apps
+    3. cd apps
+    4. make __init__.py file
+    5. python ../manage.py startapp [app_name]
+
+    ...
+DONT FORGET FOLDERS AND URLS!
+    1. update settings
+    2. update url
+ALL SUDO CODE! Don't run the commands!
+
+3. Start on Ninja Gold
+
+Add URL, then work on view, then HTML or redirect
+
+rendering/templating
+sessions
+static
+routing
