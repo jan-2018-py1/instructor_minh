@@ -1,0 +1,20 @@
+<h2>Hello world - {{name}}</h2>
+
+{{favorite_numbers.0}}
+
+{% for number in favorite_numbers %}
+<p>{{number}}</p>
+{% endfor %}
+
+{{students.0}}
+
+{% for student in students %}
+<p><a href="/hello/{{student.name}}">{{student.name }}</a> - {{student.occupation}}</p>
+{% endfor %}
+
+
+<form action="/process_form" method="POST">
+    {% csrf_token %}
+    <input type="text" name="first_name">
+    <input type="submit">
+</form>
