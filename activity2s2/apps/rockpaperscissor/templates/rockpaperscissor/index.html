@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Rock Paper Scissor</title>
+    </head>
+    <body>
+        <p> Current Score:</p>
+        <!-- I should store  -->
+        <td>Computer: {{comp_score}}</td><td>User: {{player_score}}</td><td>Draws: {{draw_count}}</td>
+        <!-- What am i missing here -->
+        <a href="/rockpaperscissor/rock">Rock</a> | <a href="/rockpaperscissor/">Scissor</a> | <a href="/rockpaperscissor/">Paper</a>
+
+        <form action="/rockpaperscissor/form" method="POST">
+            <select name="choice">
+                <option value="rock">Rock</option>
+            </select>
+            <input type="submit" >
+        </form>
+    </body>
+</html>
