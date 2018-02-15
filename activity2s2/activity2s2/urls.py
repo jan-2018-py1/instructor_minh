@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'rockpaperscissor/', include("apps.rock_paper_scissor.urls"))
+    url(r'rock_paper_scissor/', include("apps.rock_paper_scissor.urls"))
 ]
