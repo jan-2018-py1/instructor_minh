@@ -1,0 +1,24 @@
+<html>
+    <h2>Hello DJANGO!</h2>
+
+    <p>{{ name }}</p>
+    <p>Here are my students:</p>
+    <table border=1>
+        <thead>
+            <th>name</th>
+            <th>location</th>
+        </thead>
+        <tbody>
+    {% for student in students %}
+    <tr>
+        <td><a href="/functionality/hello/{{student.name}}">{{student.name}}</a></td> <td>{{student.location}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>    
+    <form action="/functionality/process_form" method="POST">
+        {% csrf_token %}
+        <input type="text" name="first_name">
+        <input type="submit">
+    </form>
+</html>
