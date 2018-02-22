@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <form action="/presidents/create" method="POST">
+        {% csrf_token %}
+        first<input type="text" name="first_name">
+        last<input type="text" name="last_name">
+        motto<input type="text" name="motto">
+        start<input type="number" name="start_year">
+        end<input type="number" name="end_year">
+        <input type="submit">
+    </form>
+</body>
+</html>

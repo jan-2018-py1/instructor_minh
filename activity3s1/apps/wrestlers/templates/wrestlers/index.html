@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>All wrestlers!</h2> <h2><a href="/wrestlers/new">New</a></h2>
+    <table>
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>weight</th>
+            <th>Nick Name</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            {% for wrestler in wrestlers %}
+            <tr>
+                <td>{{wrestler.id}}</td>
+                <td>{{wrestler.name}}</td>
+                <td>{{wrestler.weight}}</td>
+                <td>{{wrestler.nick_name}}</td>
+                <td><a href="/wrestler/{{wrestler.}}">Show</a> | <a href="/wrestler/{{wrestler.}}/edit">Edit</a>|<a href="/wrestler/{{wrestler.}}/destroy">Delete</a></td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

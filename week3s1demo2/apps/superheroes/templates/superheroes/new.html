@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <h2>Create a new super hero!</h2>
+        <form action="/superheroes/create" method="POST">
+            {% csrf_token %}
+            real_name<input type="text" name="real_name"> 
+            hero_name<input type="text" name="hero_name"> 
+            age<input type="number" name="age"> 
+            universe<input type="text" name="universe"> 
+            <input type="submit">
+        </form>
+</body>
+</html>
